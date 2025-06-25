@@ -237,7 +237,7 @@ chrome.runtime.onInstalled.addListener(() => {
     zip.file("popup.html", popupHTML);
     
     // Add popup.js
-    const popupJS = \`
+    const popupJS = `
 document.addEventListener('DOMContentLoaded', function() {
   const enableToggle = document.getElementById('enableToggle');
   const soundSelect = document.getElementById('soundSelect');
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
     audio.play().catch(e => console.log('Could not play sound:', e));
   });
 });
-\`;
+`;
     
     zip.file("popup.js", popupJS);
     
