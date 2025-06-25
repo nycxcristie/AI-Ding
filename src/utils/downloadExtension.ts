@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', function() {
     zip.file("popup.js", popupJS);
     
     // Add notification utils
-    const notificationUtils = \`
+    const notificationUtils = `
 // AI-Ding Notification Utilities
 class NotificationManager {
   constructor() {
@@ -363,12 +363,12 @@ class NotificationManager {
 
 // Initialize notification manager
 window.aiDingNotificationManager = new NotificationManager();
-\`;
+`;
     
     zip.folder("src/utils").file("notificationUtils.js", notificationUtils);
     
     // Add platform detectors
-    const chatGPTDetector = \`
+    const chatGPTDetector = `
 // ChatGPT Detector
 class ChatGPTDetector {
   constructor() {
@@ -424,12 +424,12 @@ if (document.readyState === 'loading') {
 } else {
   new ChatGPTDetector();
 }
-\`;
+`;
     
     zip.folder("src/platforms").file("chatGPTDetector.js", chatGPTDetector);
     
     // Add other platform detectors (simplified versions)
-    const geminiDetector = \`
+    const geminiDetector = `
 // Gemini Detector
 class GeminiDetector {
   constructor() {
@@ -476,12 +476,12 @@ if (document.readyState === 'loading') {
 } else {
   new GeminiDetector();
 }
-\`;
+`;
     
     zip.folder("src/platforms").file("geminiDetector.js", geminiDetector);
     
     // Add Claude detector
-    const claudeDetector = \`
+    const claudeDetector = `
 // Claude Detector
 class ClaudeDetector {
   constructor() {
@@ -524,12 +524,12 @@ if (document.readyState === 'loading') {
 } else {
   new ClaudeDetector();
 }
-\`;
+`;
     
     zip.folder("src/platforms").file("claudeDetector.js", claudeDetector);
     
     // Add DALL-E detector
-    const dalleDetector = \`
+    const dalleDetector = `
 // DALL-E Detector
 class DalleDetector {
   constructor() {
@@ -571,12 +571,12 @@ if (document.readyState === 'loading') {
 } else {
   new DalleDetector();
 }
-\`;
+`;
     
     zip.folder("src/platforms").file("dalleDetector.js", dalleDetector);
     
     // Add GitHub Copilot detector
-    const githubDetector = \`
+    const githubDetector = `
 // GitHub Copilot Detector
 class GitHubCopilotDetector {
   constructor() {
@@ -618,12 +618,12 @@ if (document.readyState === 'loading') {
 } else {
   new GitHubCopilotDetector();
 }
-\`;
+`;
     
     zip.folder("src/platforms").file("githubCopilotDetector.js", githubDetector);
     
     // Add Midjourney detector
-    const midjourneyDetector = \`
+    const midjourneyDetector = `
 // Midjourney Detector
 class MidjourneyDetector {
   constructor() {
@@ -665,12 +665,12 @@ if (document.readyState === 'loading') {
 } else {
   new MidjourneyDetector();
 }
-\`;
+`;
     
     zip.folder("src/platforms").file("midjourneyDetector.js", midjourneyDetector);
     
     // Add Loveable detector
-    const loveableDetector = \`
+    const loveableDetector = `
 // Loveable Detector
 class LoveableDetector {
   constructor() {
@@ -712,12 +712,12 @@ if (document.readyState === 'loading') {
 } else {
   new LoveableDetector();
 }
-\`;
+`;
     
     zip.folder("src/platforms").file("loveableDetector.js", loveableDetector);
     
     // Add Bolt.new detector
-    const boltDetector = \`
+    const boltDetector = `
 // Bolt.new Detector
 class BoltNewDetector {
   constructor() {
@@ -759,7 +759,7 @@ if (document.readyState === 'loading') {
 } else {
   new BoltNewDetector();
 }
-\`;
+`;
     
     zip.folder("src/platforms").file("boltNewDetector.js", boltDetector);
     
