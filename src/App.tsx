@@ -76,7 +76,7 @@ function App() {
       description: "Comprehensive guides and tutorials",
       action: "View Docs",
       color: "from-blue-600 to-blue-700",
-      onClick: () => window.open('https://github.com/nycxcristie/your-repo/blob/main/README.md', '_blank')
+      onClick: () => window.open('https://github.com/nycxcristie/AI-Ding/blob/main/README.md', '_blank')
     },
     {
       icon: <Bug className="w-8 h-8" />,
