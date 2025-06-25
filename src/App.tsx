@@ -76,7 +76,7 @@ function App() {
       description: "Comprehensive guides and tutorials",
       action: "View Docs",
       color: "from-blue-600 to-blue-700",
-      onClick: () => window.open('https://github.com/YOUR_USERNAME/AI-Ding-Chrome-Extension/blob/main/README.md', '_blank')
+      onClick: () => window.open('https://github.com/nycxcristie/AI-Ding/blob/main/README.md', '_blank')
     },
     {
       icon: <Bug className="w-8 h-8" />,
@@ -573,18 +573,18 @@ function App() {
           <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Additional Resources</h3>
             <div className="grid md:grid-cols-3 gap-6">
-              <a href="https://github.com/YOUR_USERNAME/AI-Ding-Chrome-Extension/blob/main/INSTALL.md" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-colors group">
+              <a href="#" className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-colors group">
                 <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl flex items-center justify-center text-white">
                   <Book className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 group-hover:text-purple-600">Installation Guide</h4>
-                  <p className="text-sm text-gray-600">Complete setup guides and installation docs</p>
+                  <h4 className="font-semibold text-gray-900 group-hover:text-purple-600">Documentation</h4>
+                  <p className="text-sm text-gray-600">Complete setup guides and API docs</p>
                 </div>
                 <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-purple-600" />
               </a>
 
-              <a href="https://github.com/YOUR_USERNAME/AI-Ding-Chrome-Extension" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-colors group">
+              <a href="#" className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-colors group">
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center text-white">
                   <Github className="w-6 h-6" />
                 </div>
@@ -638,7 +638,7 @@ function App() {
             
             <button className="flex items-center space-x-3 text-white hover:text-indigo-200 transition-colors">
               <Github className="w-6 h-6" />
-              <span className="text-lg" onClick={() => window.open('https://github.com/YOUR_USERNAME/AI-Ding-Chrome-Extension', '_blank')}>View on GitHub</span>
+              <span className="text-lg">View on GitHub</span>
             </button>
           </div>
 

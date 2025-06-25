@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Ding Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="popup-container">
+        <!-- Header -->
+        <div class="popup-header">
+            <div class="header-icon">
+                <div class="icon-circle">
+                    <span class="bell-icon">🔔</span>
+                </div>
+            </div>
+            <h1 class="popup-title">AI-Ding</h1>
+            <p class="popup-subtitle">Smart notifications for AI completions</p>
+        </div>
+
+        <!-- Settings -->
+        <div class="popup-content">
+            <div class="settings-section">
+                <div class="setting-row">
+                    <div class="setting-info">
+                        <div class="setting-label">Enable Sound Notifications</div>
+                        <div class="setting-description">Get audio alerts when AI responses complete</div>
+                    </div>
+                    <label class="modern-toggle">
+                        <input type="checkbox" id="enableToggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+
+                <div class="setting-row">
+                    <div class="setting-info">
+                        <div class="setting-label">Enable Popup Notifications</div>
+                        <div class="setting-description">Show desktop notifications</div>
+                    </div>
+                    <label class="modern-toggle">
+                        <input type="checkbox" id="popupToggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+
+                <div class="setting-row">
+                    <div class="setting-info">
+                        <div class="setting-label">Notification Sound</div>
+                        <div class="setting-description">Choose from built-in sounds or upload custom</div>
+                    </div>
+                    <select id="soundSelect" class="modern-select">
+                        <option value="bell">Bell</option>
+                        <option value="chime">Chime</option>
+                        <option value="ding">Ding</option>
+                        <option value="tada">Ta-da</option>
+                        <option value="custom">Custom Sound</option>
+                    </select>
+                </div>
+
+                <div class="setting-row custom-sound-row" id="customSoundSection" style="display: none;">
+                    <div class="setting-info">
+                        <div class="setting-label">Custom Sound File</div>
+                        <div class="setting-description">Upload MP3 or WAV (max 1MB)</div>
+                    </div>
+                    <div class="file-upload-wrapper">
+                        <input type="file" id="customSoundFile" accept=".mp3,.wav" class="file-input-hidden">
+                        <label for="customSoundFile" class="file-upload-btn">
+                            <span class="upload-icon">📁</span>
+                            Choose File
+                        </label>
+                        <span id="fileName" class="file-status">No file selected</span>
+                    </div>
+                </div>
+
+                <div class="setting-row">
+                    <div class="setting-info">
+                        <div class="setting-label">Volume</div>
+                        <div class="setting-description">Adjust notification volume</div>
+                    </div>
+                    <div class="volume-control">
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.7" class="modern-slider">
+                        <span id="volumeValue" class="volume-display">70%</span>
+                    </div>
+                </div>
+
+                <div class="test-sound-section">
+                    <button id="testSound" class="test-sound-btn">
+                        <span class="sound-icon">🔊</span>
+                        Test Sound
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="popup-footer">
+            <div class="platforms-section">
+                <h3 class="platforms-title">Supported Platforms</h3>
+                <div class="platforms-grid">
+                    <span class="platform-tag">ChatGPT</span>
+                    <span class="platform-tag">Gemini</span>
+                    <span class="platform-tag">Claude</span>
+                    <span class="platform-tag">DALL-E</span>
+                    <span class="platform-tag">Copilot</span>
+                    <span class="platform-tag">Midjourney</span>
+                    <span class="platform-tag">Loveable</span>
+                    <span class="platform-tag">Bolt.new</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
