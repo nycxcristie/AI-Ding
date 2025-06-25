@@ -94,7 +94,7 @@ chrome.runtime.onInstalled.addListener(() => {
     zip.file("background.js", backgroundScript);
     
     // Add popup.html
-    const popupHTML = <!DOCTYPE html>
+    const popupHTML = `<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -232,7 +232,7 @@ chrome.runtime.onInstalled.addListener(() => {
   
   <script src="popup.js"></script>
 </body>
-</html>\`;
+</html>`;
     
     zip.file("popup.html", popupHTML);
     
