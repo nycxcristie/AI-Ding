@@ -1,0 +1,52 @@
+# AI-Ding Chrome Extension .gitignore
+
+# Development files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if you add build tools later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts (if you add build process later)
+dist/
+build/
+*.zip
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Chrome extension specific
+*.crx
+*.pem
+key.pem
+
+# Temporary files
+*.bak
+*.backup
+*.old
+
+# Environment files (if you add any)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
